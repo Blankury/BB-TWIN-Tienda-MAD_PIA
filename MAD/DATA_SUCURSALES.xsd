@@ -1,0 +1,81 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DATA_SUCURSALES" targetNamespace="http://tempuri.org/DATA_SUCURSALES.xsd" xmlns:mstns="http://tempuri.org/DATA_SUCURSALES.xsd" xmlns="http://tempuri.org/DATA_SUCURSALES.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="SUPERMERCADOConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="SUPERMERCADOConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.MAD.Properties.Settings.GlobalReference.Default.SUPERMERCADOConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="SUCURSALES_DISPONIBLESTableAdapter" GeneratorDataComponentClassName="SUCURSALES_DISPONIBLESTableAdapter" Name="SUCURSALES_DISPONIBLES" UserDataComponentName="SUCURSALES_DISPONIBLESTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="SUPERMERCADOConnectionString (Settings)" DbObjectName="SUPERMERCADO.dbo.SUCURSALES_DISPONIBLES" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT        Sucursal, Numero, Direccion, Encargado, Agragada
+FROM            SUCURSALES_DISPONIBLES</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="Sucursal" DataSetColumn="Sucursal" />
+              <Mapping SourceColumn="Numero" DataSetColumn="Numero" />
+              <Mapping SourceColumn="Direccion" DataSetColumn="Direccion" />
+              <Mapping SourceColumn="Encargado" DataSetColumn="Encargado" />
+              <Mapping SourceColumn="Agragada" DataSetColumn="Agragada" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DATA_SUCURSALES" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="DATA_SUCURSALES" msprop:Generator_UserDSName="DATA_SUCURSALES">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="SUCURSALES_DISPONIBLES" msprop:Generator_TableClassName="SUCURSALES_DISPONIBLESDataTable" msprop:Generator_TableVarName="tableSUCURSALES_DISPONIBLES" msprop:Generator_TablePropName="SUCURSALES_DISPONIBLES" msprop:Generator_RowDeletingName="SUCURSALES_DISPONIBLESRowDeleting" msprop:Generator_RowChangingName="SUCURSALES_DISPONIBLESRowChanging" msprop:Generator_RowEvHandlerName="SUCURSALES_DISPONIBLESRowChangeEventHandler" msprop:Generator_RowDeletedName="SUCURSALES_DISPONIBLESRowDeleted" msprop:Generator_UserTableName="SUCURSALES_DISPONIBLES" msprop:Generator_RowChangedName="SUCURSALES_DISPONIBLESRowChanged" msprop:Generator_RowEvArgName="SUCURSALES_DISPONIBLESRowChangeEvent" msprop:Generator_RowClassName="SUCURSALES_DISPONIBLESRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Sucursal" msprop:Generator_ColumnVarNameInTable="columnSucursal" msprop:Generator_ColumnPropNameInRow="Sucursal" msprop:Generator_ColumnPropNameInTable="SucursalColumn" msprop:Generator_UserColumnName="Sucursal">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="15" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Numero" msprop:Generator_ColumnVarNameInTable="columnNumero" msprop:Generator_ColumnPropNameInRow="Numero" msprop:Generator_ColumnPropNameInTable="NumeroColumn" msprop:Generator_UserColumnName="Numero" type="xs:int" />
+              <xs:element name="Direccion" msprop:Generator_ColumnVarNameInTable="columnDireccion" msprop:Generator_ColumnPropNameInRow="Direccion" msprop:Generator_ColumnPropNameInTable="DireccionColumn" msprop:Generator_UserColumnName="Direccion">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="500" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Encargado" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnEncargado" msprop:Generator_ColumnPropNameInRow="Encargado" msprop:Generator_ColumnPropNameInTable="EncargadoColumn" msprop:Generator_UserColumnName="Encargado" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="51" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Agragada" msprop:Generator_ColumnVarNameInTable="columnAgragada" msprop:Generator_ColumnPropNameInRow="Agragada" msprop:Generator_ColumnPropNameInTable="AgragadaColumn" msprop:Generator_UserColumnName="Agragada" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:SUCURSALES_DISPONIBLES" />
+      <xs:field xpath="mstns:Numero" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>
